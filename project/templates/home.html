@@ -1,0 +1,19 @@
+<html>
+<body>
+  <h1><b>WELCOME TO MY SHORTING URL'S PROJECT!</b></h1>
+
+  <form method="POST" action="/">
+    {% csrf_token %}
+    <table>
+    <td> URL for shorting: </td>
+    <td><input type='text' name='key'/></td>
+    </table>
+    <input type='submit' value='Send'/>
+    </form>
+
+  <p>
+    {{ urls | safe}}
+  </p>
+  
+</body>
+</html>
